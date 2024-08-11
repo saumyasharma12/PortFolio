@@ -1,0 +1,153 @@
+/* src/HomePage.css */
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: calc(100vh - 60px); /* Adjust the height if you have a fixed navbar */
+  width: auto;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.intro {
+  flex: 1;
+  padding: 50px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.heading {
+  color: #008080;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 0.6rem;
+}
+
+.social-icons a {
+  color: rgb(0, 68, 255);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #008080;
+}
+
+.cv-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #005757;
+  font-weight: 600;
+}
+
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image img {
+  max-width: 390px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #008080;
+  size: 60px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .intro {
+    padding: 30px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+  
+  .profile-image img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .profile-image {
+    display: none; /* Hide the image */
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    padding: 15px;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 0.9rem;
+  }
+
+  .cv-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    display: none; /* Ensure the image is hidden on very small screens */
+  }
+}

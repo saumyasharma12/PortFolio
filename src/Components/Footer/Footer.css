@@ -1,0 +1,89 @@
+/* src/Footer.css */
+.footer {
+  background-color: #E6E6FA;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+  padding-bottom: 2rem;
+}
+
+.footer-nav a {
+  margin: 0 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-nav a:hover {
+  color: #008080;
+  font-weight: bold;
+}
+
+.footer p {
+  margin: 0;
+  color: #555;
+}
+
+.saumya {
+  color: #09b1b1;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .footer-nav {
+      padding-bottom: 1.5rem;
+  }
+
+  .footer-nav a {
+      font-size: 18px;
+      margin: 0 12px;
+  }
+
+  .footer {
+      padding: 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav a {
+      font-size: 16px;
+      margin: 0 10px;
+  }
+
+  .footer-nav {
+      margin-bottom: 8px;
+      padding-bottom: 1rem;
+  }
+
+  .footer p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-nav {
+      flex-direction: column;
+      padding-bottom: 0.5rem;
+  }
+
+  .footer-nav a {
+      display: block;
+      margin: 8px 0;
+      font-size: 14px;
+  }
+
+  .footer {
+      padding: 6px 0;
+  }
+
+  .footer p {
+      font-size: 0.8rem;
+  }
+}

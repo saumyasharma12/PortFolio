@@ -1,0 +1,128 @@
+/* src/ContactMe.css */
+.contact-container {
+  text-align: center;
+  padding: 9rem;
+}
+
+.get-in-touch {
+  font-size: 1.8rem;
+  color: lightgray;
+  padding-bottom: 1.3rem;
+}
+
+.contact-me {
+  font-size: 4rem;
+  margin-bottom: 40px;
+  color: #008080;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-box {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-icon:hover {
+  color: #008080;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .contact-container {
+      padding: 6rem;
+  }
+
+  .get-in-touch {
+      font-size: 1.6rem;
+  }
+
+  .contact-me {
+      font-size: 3.5rem;
+  }
+
+  .contact-box {
+      padding: 15px;
+  }
+
+  .contact-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 4rem;
+  }
+
+  .get-in-touch {
+      font-size: 1.4rem;
+  }
+
+  .contact-me {
+      font-size: 3rem;
+  }
+
+  .contact-box {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .contact-item {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+  }
+
+  .contact-icon {
+      font-size: 1.3rem;
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+      padding: 2rem;
+  }
+
+  .get-in-touch {
+      font-size: 1.2rem;
+  }
+
+  .contact-me {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+  }
+
+  .contact-box {
+      padding: 8px;
+  }
+
+  .contact-item {
+      align-items: center;
+      margin-bottom: 20px;
+  }
+
+  .contact-icon {
+      font-size: 1.2rem;
+  }
+}

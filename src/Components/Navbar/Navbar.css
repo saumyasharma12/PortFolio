@@ -1,0 +1,129 @@
+.navbar {
+  background-color: #E6E6FA;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.logo {
+  height: 70px;
+  width: 16rem;
+}
+
+.navbar-middle {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wrap nav items on small screens */
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-item a:hover, .nav-item.active a {
+  background-color: #575757;
+  color: white;
+  border-radius: 70px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-button {
+  background-color: #45a049;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-middle {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .contact-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .navbar-middle {
+    order: 2; /* Move to the bottom */
+    width: 100%; /* Take full width */
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .navbar-right {
+    order: 1; /* Move to the top */
+    width: 100%; /* Take full width */
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .contact-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
